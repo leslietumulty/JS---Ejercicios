@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      var numero = parseFloat(prompt("Ingrese un número"));
+      var resto3 = numero % 3;
+      var resto5 = numero % 5;
+
+      if ((resto3 == 0) & (resto5 == 0)) {
+        document.write("Su numero es múltiplo de 3 y de 5");
+      } else if (resto5 == 0) {
+        document.write("Su numero es múltiplo de 5");
+      } else if (resto3 == 0){
+        document.write("Su numero es múltiplo de 3");
+      } else {
+        document.write("Su numero no es múltiplo ni de 3 ni de 5");
+      }
+
+    </script>
+  </head>
+  <body></body>
+</html>

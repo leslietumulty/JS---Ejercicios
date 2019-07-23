@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      var valorHora = parseFloat(
+        prompt("Ingrese el valor de la hora de trabajo")
+      );
+      var cantidadHoras = parseFloat(
+        prompt("Ingrese la cantidad de horastrabajadas")
+      );
+      var cantidadAnios = parseFloat(
+        prompt("ingrese la cantidad de años en la empresa")
+      );
+
+      var sueldoMensual = valorHora * cantidadHoras;
+      var premioAntiguedad = (sueldoMensual * 10 / 100 ) * cantidadAnios;
+    var sueldoTotal;
+    var bonoHoras;
+
+    if (cantidadHoras >=110 && cantidadHoras<=220) {
+        bonoHoras = (sueldoMensual * 5) / 100;
+        sueldoTotal = sueldoMensual + premioAntiguedad + bonoHoras;
+        document.write ('Su sueldo total es ' + sueldoTotal)
+    } else if (cantidadHoras>220) {
+        bonoHoras = (sueldoMensual * 10) / 100;
+        sueldoTotal = sueldoMensual + premioAntiguedad + bonoHoras;
+        document.write ('Su sueldo total es ' + sueldoTotal)
+    } else {
+        sueldoTotal = sueldoMensual + premioAntiguedad;
+        document.write ('Su sueldo total es ' + sueldoTotal)
+    }
+   console.log (sueldoMensual, premioAntiguedad, bonoHoras)
+   
+    </script>
+  </head>
+  <body>
+    <!-- Realizar un sistema para el cálculo de sueldos de una empresa de software. 
+            Se le solicita al empleado que ingrese:
+             -el valor de la hora, 
+             -la cantidad de horas trabajadas en el mes 
+             -y los años de antigüedad en la empresa. 
+             
+             Realice el algoritmo para calcular e informar 
+             -el sueldo de un empleado en el mes, teniendo en cuenta que 
+             -se le asigna un premio igual al 10% del sueldo por año de antigüedad. 
+             -Además se sabe que si empleado trabajó más de 110 horas, recibe un premio igual 5% del sueldo y 
+             -que si trabajó más de 220 horas, recibe un premio igual al 10% del sueldo.-->
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+          var sueldoMensual = prompt ( 'Ingrese su sueldo básico mensual');
+          var segurosVendidos = prompt ('Ingrese la cantidad de seguros vendidos');
+          var seguroMasCaro = prompt ('Ingrese el valor del seguro más caro vendido');
+
+var premioSeguroCaro = parseFloat (seguroMasCaro * 25 )/ parseFloat (100);
+var premioCantSeguros = parseFloat ((sueldoMensual *15) / parseFloat (100))* parseFloat (segurosVendidos);
+var sueldoTotal = parseFloat (sueldoMensual)+ parseFloat (premioSeguroCaro) + parseFloat (premioCantSeguros);
+
+document.write ('Su sueldo total es '+ sueldoTotal);
+        </script>
+    </head>
+    <body></body>
+</html>

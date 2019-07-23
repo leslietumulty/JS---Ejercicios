@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+    var rangoMenor = parseInt (prompt ('Ingrese el menor número de un rango numérico'));
+    var rangoMayor = parseInt (prompt ('Ingrese el mayor número de un rango numérico (tenga en cuenta que debe haber una diferencia mínima de 5 números)'));
+    var numero = parseInt (prompt ('Ingrese un número'));
+var dif = rangoMayor - rangoMenor
+
+if (dif >= 5) {
+    if (numero >=rangoMenor && numero<=rangoMayor ){
+        document.write ('su número está dentro del rango <br> ');
+            if (numero % 2 == 0) {
+            document.write ('su número es par')
+        } 
+    }else {
+        if (numero % 2 != 0) {
+            document.write ('su número no está dentro del rango y es impar')
+        }
+}
+
+}
+    </script>
+  </head>
+  <body></body>
+</html>

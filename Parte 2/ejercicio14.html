@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+     var categoria = prompt('Ingrese la categoría a la que pertenece');
+     var horasExtras = parseFloat (prompt('Ingrese la cantidad de horas extras realizadas'));
+     var aniosAntiguedad = parseFloat (prompt('Ingrese su antigüedad en la empresa'))   ;
+     var premioHoras = 500;
+     var premioCincoAntiguedad = 1000;
+     var premioAntiguedad = aniosAntiguedad * 50;
+    var sueldoBase;
+
+     switch (categoria) {
+         case '1':
+         sueldoBase = 3000;
+         break;
+         case '2':
+         sueldoBase = 4000;
+         break;
+         case '3': 
+         sueldoBase = 5000;
+         break;
+         case '4': 
+         sueldoBase = 6000;
+        break;
+        default: 
+        document.write ('Debe ingresar una categoria')
+    }
+
+if (categoria==1 && horasExtras > 20){
+sueldoFinal = sueldoBase + premioHoras +  premioAntiguedad;
+} else if (categoria==3 && aniosAntiguedad > 5){
+       sueldoFinal = sueldoBase + premioCincoAntiguedad + premioAntiguedad;
+} else {
+    document.write ('No corresponde bono por horas Extras mayores a 20  ni por antigüedad mayor a 5 años')
+}
+
+document.write ('Su sueldo total es de ' + sueldoFinal + '<br>')
+console.log (categoria, sueldoBase, premioCincoAntiguedad, premioAntiguedad, horasExtras, premioHoras,   sueldoFinal)
+
+if (sueldoFinal > 7000) {
+    document.write ('Su sueldo final supera los $7000 ')
+}
+    
+    </script>
+  </head>
+  <body>
+    <!--Realizar un sistema para el cálculo de sueldo de una empresa. Se le solicita al usuario que ingrese 
+        -la categoría a la que pertenece que define el sueldo básico mensual 
+        (categoría 1: $3000, 
+        categoría 2: $4000, 
+        categoría 3: $5000, 
+        categoría 4: $6000), 
+        -las horas extras y 
+        -los años de antigüedad. 
+        
+        Se sabe que:
+ 							
+Si es de la categoría 1 y trabajó más de 20 horas extra, suma un premio de $500 más.
+ 								
+Si es de la categoría 3 y tiene más de 5 años de antigüedad, suma un premio de $1000 más.
+ 								
+Todos las categorías reciben un premio de $50 por año de antigüedad.
+ 									
+Realice el algoritmo para calcular e informar el sueldo de un empleado en el mes, e indicar si su sueldo supera los $7000.
+-->
+  </body>
+</html>
