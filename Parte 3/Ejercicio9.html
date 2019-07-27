@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+     
+     var nota;
+var cantAprobados = 0;
+var cantDesaprobados = 0;
+var sumaNotas = 0;
+
+do{
+    do {
+        nota = parseFloat ( prompt('Ingrese una nota mayor o igual a 1 y menor o igual a 10'))
+
+    }while (nota >= 1 && nota <= 10) ;
+
+    if (nota >=4) {
+        cantAprobados ++;
+    } else {
+        cantDesaprobados++;
+    }
+        sumaNotas += notas
+    var r =confirm ('Desea seguir ingresando notas?')
+} while (r)
+
+var cantidadTotal = cantAprobados + cantidadDesaprobados;
+var promedioTotal = sumaNotas/ cantidadTotal;
+
+document.write (cantAprobados + 'cantidad de aprobados')
+document.write (cantDesaprobados + 'cantidad de desaprobados')
+    </script>
+</head>
+<body>
+        <!--Se le solicita al usuario que ingrese las notas del parcial de los alumnos de una comisión. 
+            Se desconoce la cantidad de alumnos. 
+            
+            Realice el algoritmo para informar:
+ 					
+        La cantidad de alumnos aprobados (nota igual o superior a 4)								
+        La cantidad de alumnos desaprobados (nota inferior a 4).
+                                         
+        El promedio de las notas.
+                                         
+        El porcentaje de alumnos aprobados.
+    Todas las notas deben ser validados. Tenga en cuenta que solamente las notas pueden ir del 1 al 10.	-->
+        
+    
+</body>
+</html>

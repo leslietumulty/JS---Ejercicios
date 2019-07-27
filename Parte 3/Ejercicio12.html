@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            var numero;
+            var numero;
+            var menor;
+            var sumatoriaImpares = 0;
+            var cantMultiplos4y7 = 0;
+            var r;
+            var contador = 0;
+
+            do {
+                do {
+                    numero = parseFloat(prompt('Ingrese un número'));
+                    if (isNan(numero)) {
+                        alert('EL VALOR INGRESADO NO ES UN NUMERO');
+                    }
+                } while (isNaN(numero));
+
+                if (numero % 4 == 0 && numero % 7 == 0) {
+                    cantMultiplos4y7++;
+                }
+                if (numero % 2 != 0) {
+                    sumatoriaImpares += numero;
+                }
+                if (contador == 0) {
+                    mayor = numero;
+                    menor = numero;
+                } else {
+                    if (mayor < numero) {
+                        mayor = numero;
+                    }
+                    if (menor > numero) {
+                        menor = numero;
+                    }
+                }
+
+                contador++;
+                r = confirm('Desea seguir ingresando números?');
+            } while (r);
+
+            document.write(multiplos4y7 + ' suma de multiplos de 4 y 7 <br/>');
+            document.write(sumaImpares + ' suma de numeros impares <br/>');
+            document.write(mayor + ' mayor numero ingresado <br/>');
+            document.write(menor + ' menor numero ingresados <br/>');
+        </script>
+    </head>
+    <body>
+        <!--Se le solicita al usuario que ingrese una cantidad desconocida de números. Realice el algoritmo para calcular e informar:
+ 							
+       La cantidad de valores múltiplos de 4 y de 7.
+ 								
+       La sumatoria de los valores ingresados en orden impar.
+ 								 
+       El menor valor ingresado.
+ 								
+       El mayor valor ingresado.
+     Todos los valores deben ser validados. -->
+    </body>
+</html>

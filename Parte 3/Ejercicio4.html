@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+                 var nombre;
+                 var nota;
+
+                 do{
+                     nombre = prompt ('Ingrese el nombre del Alumno')
+                     do{
+                         nota= parseFloat (prompt ('Ingrese la nota del Alumno'));
+               
+                     }while (nota == isNaN==true);
+                     if (nota >=1 && nota <=10){
+      if (nota < 4){
+          document.write ('La nota del Alumno es menor a 4')
+      } else if (nota = 4){
+          document.write ('La nota del Alumno es 4')
+      } else {
+          document.write ('La nota del Alumno es mayor a 4')
+      }
+                }
+      var continuar = confirm ('Desea seguir ingresando datos de Alumnos?')
+            } while (continuar)
+    </script>
+  </head>
+  <body>
+    <!--Se le solicita al usuario que ingrese los datos de los alumnos de una comisión, que son el nombre del alumno y la nota. Se desconoce la cantidad de alumnos. 
+        Realice el algoritmo para informar si la nota ingresada es superior, inferior o igual a 4. 
+        Tenga en cuenta que solamente las notas pueden ir del 1 al 10, en caso de no ser una nota válida, informarlo en pantalla.
+
+	--></body>
+</html>
