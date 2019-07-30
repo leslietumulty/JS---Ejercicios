@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            var numero1;
+            var numero2;
+            var operador;
+            var resultado;
+            do {
+                do {
+                    numero1 = parseFloat(prompt('Ingrese un número'));
+                } while (isNaN(numero1));
+                do {
+                    numero2 = parseFloat(prompt('Ingrese otro número'));
+                } while (isNaN(numero2));
+                do {
+                    operador = prompt('Ingrese un operador (+, -, *, /, %) ');
+                } while (operador != '+' && operador != '-' && operador != '*' && operador != '/' && operador != '%');
+
+                switch (operador) {
+                    case '+':
+                        resultado = numero1 + numero2;
+                        document.write('Realizaste una suma. El resultado es ' + resultado + '<br>');
+                        break;
+                    case '-':
+                        resultado = numero1 - numero2;
+                        document.write('Realizaste una resta. El resultado es ' + resultado + '<br>');
+                        break;
+                    case '*':
+                        resultado = numero1 * numero2;
+                        document.write('Realizaste una multiplicación. El resultado es ' + resultado + '<br>');
+                        break;
+                    case '/':
+                        resultado = numero1 / numero2;
+                        document.write('Realizaste una división. El resultado es ' + resultado + '<br>');
+                        break;
+                    case '%':
+                        resultado = numero1 % numero2;
+                        document.write(' Realizaste un modulo. El resultado es  ' + resultado + '<br>');
+                        break;
+                    default:
+                        document.write('No elegiste uno de los operadores indicados en la consigna');
+                }
+
+                var continuar = confirm('Desea seguir ingresando números?');
+            } while (continuar);
+        </script>
+    </head>
+    <body>
+        <!--Se le solicita al usuario que ingrese dos números y un operador (+, -, *, /, %). 
+            Realice el algoritmo para calcular e informar cada operación deseada entre los dos 
+            números. Ese proceso se puede repetir mientras lo desee el usuario. Todos los valores 
+            deben ser validados.
+
+
+
+	--></body>
+</html>

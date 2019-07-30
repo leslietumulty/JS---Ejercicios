@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            var numero;
+            var multiplos4 = 0;
+            var multiplos7 = 0;
+            var impares = 0;
+            var sumaImpares = 0;
+
+            do {
+                do {
+                    numero = parseFloat(prompt('Ingrese un número'));
+                    if (isNan(numero)) {
+                        alert('EL VALOR INGRESADO NO ES UN NUMERO');
+                    }
+                } while (isNaN(numero));
+
+                if (numero % 4 == 0) {
+                    multiplos4++;
+                }
+                if (numero % 7 == 0) {
+                    multiplos7++;
+                }
+                if (numero % 2 != 0) {
+                    impares++;
+                    sumaImpares += numero;
+                }
+                var continuar = confirm('Desea seguir ingresando números?');
+            } while (continuar);
+
+            document.write('La cantidad de multiplos de 4 ingresados es: ' + multiplos4 + '<br>');
+            document.write('La cantidad de multiplos de 7 ingresados es: ' + multiplos7 + '<br>');
+            document.write('La cantidad de números impares ingresados es: ' + impares + '<br>');
+            document.write('La suma de números impares ingresados es: ' + sumaImpares + '<br>');
+        </script>
+    </head>
+    <body>
+        <!--Se le solicita al usuario que ingrese una cantidad desconocida de números. 
+            Realice el algoritmo para calcular e informar:
+ 							
+La cantidad de valores múltiplos de 4.
+ 								
+La sumatoria de los valores múltiplos de 7.
+ 								
+La cantidad de valores impares.
+ 								
+La sumatoria de los valores ingresados en orden par.
+-->
+    </body>
+</html>

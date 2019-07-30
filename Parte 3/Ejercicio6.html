@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            var nombre;
+            var horasTrabajadas;
+            var valorHora;
+            var sueldo;
+            do {
+                nombre = prompt('Ingrese su nombre');
+                do {
+                    horasTrabajadas = parseFloat(prompt('Ingrese la cantidad de horas trabajadas en el mes'));
+                } while (isNaN(horasTrabajadas));
+                do {
+                    valorHora = parseFloat(prompt('Ingrese el valor por hora trabajada'));
+                } while (isNaN(valorHora));
+                sueldo = horasTrabajadas * valorHora;
+                document.write('El sueldo del empleado ' + nombre + ' es: $' + sueldo + '<br>');
+                var continuar = confirm('Desea seguir ingresando datos de los empleados?');
+            } while (continuar);
+        </script>
+    </head>
+    <body>
+        <!--Se le solicita al empleado que ingrese la cantidad de horas trabajas en el 
+            mes y el valor de la hora. Realice el algoritmo para calcular e informar el 
+            sueldo de cada empleado, mostrando sus datos en pantalla. Se desconoce la 
+            cantidad de empleados. Todos los valores deben ser validados.
+
+
+	-->
+    </body>
+</html>
