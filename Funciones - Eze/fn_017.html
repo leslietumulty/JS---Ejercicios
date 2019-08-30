@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            // codear a aca abajo la solución al ejercicio
+            let calcularSumatoria = function(array) {
+                var suma = array.reduce(function(total, numero) {
+                    return total + numero;
+                });
+                return suma;
+            };
+            // CREAR calcularPromedio
+            let calcularPromedio = function(array) {
+                return calcularSumatoria(array) / numeros.length;
+            };
+            // para la funcion calcularPromedio podés utilizar calcularSumatoria que hicimos en el ejercicio fn_016
+
+            var numeros = [7, 4, 1, 8, 9, 4, 9];
+
+            console.log(calcularPromedio(numeros)); // 6
+        </script>
+    </head>
+    <body></body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            var fibonacci = function() {
+                var array = [];
+                var inicial = 0;
+                var unoMas = 1;
+
+                for (var i = 0; i < 10; i++) {
+                    if (i == 0) {
+                        array.push(i);
+                    } else {
+                        var sum = inicial + unoMas;
+                        array.push(sum);
+                        inicial = unoMas;
+                        unoMas = sum;
+                    }
+                }
+                return array;
+            };
+            console.log(fibonacci());
+        </script>
+    </head>
+    <body></body>
+</html>
