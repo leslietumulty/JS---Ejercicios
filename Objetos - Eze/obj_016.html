@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            let nevermind = [
+                { id: 1, nombre: 'Smells Like Teen Spirit', duracion: 302 },
+                { id: 2, nombre: 'In Bloom', duracion: 255 },
+                { id: 3, nombre: 'Come As You Are', duracion: 219 },
+                { id: 4, nombre: 'Breed', duracion: 184 },
+                { id: 5, nombre: 'Lithium', duracion: 257 }
+            ];
+
+            let duracionTotal = nevermind.reduce(function(total, objeto) {
+                return total + objeto.duracion;
+            });
+            let duracionPromedioPorCancion = duracionTotal / nevermind.length;
+            ///// RESULTADO- NO ME SALEEEEEEEE
+            console.log(duracionTotal); // 1217
+            console.log(duracionPromedioPorCancion); // 243.4
+
+            //Tenemos un array de objetos, con las canciones de un disco de Nirvana
+            //Cada objeto representa una canción, y tiene las propidades id, nombre, duracion (en segundos)
+            //Queremos calcular:
+            //La duración total del disco (suma de la duración de cada canción)
+            //La duración promedio por canción (un promedio entre todas las duraciones)
+        </script>
+    </head>
+    <body></body>
+</html>
